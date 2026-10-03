@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#080b12">
+    <meta name="description" content="The personal portfolio of Paolo Louis Cutos.">
+    <title>Paolo Louis Cutos — Personal Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="wordmark" href="#home" aria-label="Paolo Louis Cutos, home"><span class="wordmark-mark">P</span><span>Paolo Cutos<span class="wordmark-period">.</span></span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-navigation">
+          <span class="menu-toggle-label">Menu</span>
+          <span class="menu-icon" aria-hidden="true"><span></span><span></span></span>
+        </button>
+        <nav class="primary-navigation" id="primary-navigation" aria-label="Primary navigation">
+          <ul class="nav-list" id="navigation-links"></ul>
+          <a class="nav-cta" href="#contact">Let’s connect <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> PERSONAL PORTFOLIO <span class="eyebrow-separator">/</span> 2026</p>
+          <h1 id="hero-title">Curious by nature.<br><span class="text-gradient">Building what's next.</span></h1>
+          <p class="hero-description">Hi, I’m <strong>Paolo Louis Cutos</strong>. This is my corner of the internet to share what I’m learning, making, and exploring.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#projects">Explore my work <span aria-hidden="true">↓</span></a>
+            <a class="button button-quiet" href="#about">A little about me <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-meta">
+            <span class="meta-line" aria-hidden="true"></span>
+            <span>A work in progress, made with intention.</span>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-outer"></div>
+          <div class="orbit orbit-inner"></div>
+          <div class="orbit-core"><span>PC</span></div>
+          <span class="orbit-label orbit-label-top">IDEAS →</span>
+          <span class="orbit-label orbit-label-bottom">MAKE / LEARN / REPEAT</span>
+          <span class="orbit-spark spark-one"></span>
+          <span class="orbit-spark spark-two"></span>
+        </div>
+        <span class="hero-index" aria-hidden="true">01 — 06</span>
+      </section>
+
+      <section class="about section-shell section-bordered" id="about" aria-labelledby="about-title">
+        <div class="section-heading">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2 id="about-title">A bit about <span class="text-gradient">me.</span></h2>
+        </div>
+        <div class="about-grid">
+          <div class="about-lead">
+            <p class="large-copy">I believe the best way to learn is to stay curious, try things out, and keep making.</p>
+          </div>
+          <div class="about-details">
+            <p>I’m Paolo Louis Cutos. This portfolio is a place to bring together my projects, interests, and the ideas I’m exploring. I’m still shaping my path, and I’m excited by the process as much as the outcome.</p>
+            <p class="about-note">More about my background and focus will find its way here as I build and learn.</p>
+            <div class="detail-pills">
+              <span class="detail-pill"><span>NAME</span> Paolo Louis Cutos</span>
+              <span class="detail-pill"><span>BORN</span> December 27, 2002</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="projects section-shell section-bordered" id="projects" aria-labelledby="projects-title">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow">02 / SELECTED WORK</p><h2 id="projects-title">Things I’m <span class="text-gradient">making.</span></h2></div>
+          <p class="section-aside">A few starting points for the work<br>and ideas I want to explore.</p>
+        </div>
+        <div class="project-grid" id="projects-container"></div>
+        <p class="content-disclaimer">Project cards are starter concepts, not claims of completed work. Replace them with your real projects before sharing.</p>
+      </section>
+
+      <section class="hobbies section-shell section-bordered" id="hobbies" aria-labelledby="hobbies-title">
+        <div class="section-heading heading-row">
+          <div><p class="eyebrow">03 / OFF THE CLOCK</p><h2 id="hobbies-title">Curiosity doesn’t <span class="text-gradient">clock out.</span></h2></div>
+          <p class="section-aside">The little things that keep<br>the ideas flowing.</p>
+        </div>
+        <div class="hobby-grid" id="hobbies-container"></div>
+        <p class="content-disclaimer">These are editable examples, not confirmed personal hobbies. Update them to reflect you.</p>
+      </section>
+
+      <section class="contact section-shell section-bordered" id="contact" aria-labelledby="contact-title">
+        <div class="contact-panel">
+          <div class="contact-copy">
+            <p class="eyebrow">04 / SAY HELLO</p>
+            <h2 id="contact-title">Good things start<br>with a <span class="text-gradient">conversation.</span></h2>
+            <p>I’m always open to a thoughtful conversation, a new perspective, or an interesting opportunity.</p>
+          </div>
+          <div class="contact-links" id="contact-links" aria-label="Contact and social links"></div>
+        </div>
+        <p class="content-disclaimer contact-disclaimer">Add your real email and profile URLs in <code>script.js</code> to activate these links.</p>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <a class="wordmark footer-wordmark" href="#home"><span class="wordmark-mark">P</span><span>Paolo Cutos<span class="wordmark-period">.</span></span></a>
+        <p>Made with curiosity<span class="footer-heart" aria-label="love"> ♥</span> and a little bit of code.</p>
+        <a class="back-to-top" href="#home">Back to top <span aria-hidden="true">↑</span></a>
+        <small>© <span id="current-year"></span> Paolo Louis Cutos</small>
+      </div>
+    </footer>
+  </body>
+</html>
